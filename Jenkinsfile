@@ -11,5 +11,10 @@ pipeline {
         sh 'pytest .'
       }
     }
+    stage('log success') {
+      steps {
+        echo 'success'
+      }
+    }
   }
 }
